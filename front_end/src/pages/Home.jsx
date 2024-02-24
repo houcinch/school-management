@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default function home() {
-  return (
-    <div>home</div>
-  )
+    return (
+        <h1 className='text-3xl'>home</h1>
+    )
 }
