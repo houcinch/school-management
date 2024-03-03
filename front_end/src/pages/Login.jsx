@@ -1,7 +1,9 @@
-import React from 'react'
-
+import StudentLogin from '../components/Student/StudentLogin'
 export default function login() {
-  return (
-    <div>login</div>
-  )
+    return (
+        <>
+            <div>Student Login</div>
+            <StudentLogin/>
+        </>
+    )
 }
