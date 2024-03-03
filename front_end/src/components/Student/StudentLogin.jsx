@@ -1,4 +1,4 @@
-import { z } from "zod"
+import { date, z } from "zod"
 
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
@@ -33,9 +33,9 @@ export default function studentLogin() {
     })
 
     // 2. Define a submit handler.
-    function onSubmit(values) {
-        const axios = axiosClient.defaults
-        console.log(values,axios)
+    const onSubmit = async values => {
+        const csrf  = await axiosClient.get('/sanctum/csrf-cookie')
+        console.log(data)
         return (
             <div>studentLogin</div>
         )
