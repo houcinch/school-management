@@ -5,6 +5,8 @@ import About from "../pages/About";
 import NotFound from "../pages/NotFound";
 import Layout from "../layouts/Layout";
 
+export const LOGIN_ROUTE = '/login'
+export const STUDENT_DASHBOARD_ROUTE = '/student/dashboard'
 export const router = createBrowserRouter(
     [
 
@@ -16,8 +18,12 @@ export const router = createBrowserRouter(
                     element: <Home />
                 },
                 {
-                    path: '/Login',
+                    path: LOGIN_ROUTE,
                     element: <Login />
+                },
+                {
+                    path: STUDENT_DASHBOARD_ROUTE,
+                    element: 'Student Dashboard'
                 },
                 {
                     path: '/about',
